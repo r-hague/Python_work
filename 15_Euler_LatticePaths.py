@@ -4,7 +4,7 @@ pathArray.append([1])
 pathArray.append([1, 1])
 pathArray.append([1, 2, 1])
 
-latticeSize = 10
+latticeSize = 20
 
 for i in range(2, latticeSize):
     nextTuple = [1]
