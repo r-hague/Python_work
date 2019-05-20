@@ -1,8 +1,6 @@
 import math
 
-myFunc = input("Press 1 to calculate payment amount for a given duration and principal. "
-               "Press 2 to calculate duration for a given payment amount and principal. "
-               "Press 3 to calculate principal for a given duration and payment amount: ")
+myFunc = input("Press 1 to calculate payment amount for a given duration and principal. \n Press 2 to calculate duration for a given payment amount and principal. \n Press 3 to calculate principal for a given duration and payment amount: ")
 
 interestRate = input("Interest rate (%): ")
 r = interestRate / 1200
@@ -47,13 +45,13 @@ elif myFunc == 3:
 else:
     print "error"
 
-# loanBalance = loanValue
-# i = 1
-# while loanBalance > 0.01:
-#     interest = (interestRate/12/100)*loanBalance
-#     loanBalance = (interest + loanBalance) - payment
-#     print i, interest, loanBalance
-#     i += 1
+loanBalance = loanValue
+i = 1
+while loanBalance > 0.01:
+    interest = (interestRate/1200)*loanBalance
+    loanBalance = (interest + loanBalance) - payment
+    print i, interest, loanBalance
+    i += 1
 
 
 
